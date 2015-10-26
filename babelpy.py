@@ -20,10 +20,10 @@ elif args.get('text_file'):
     try:
         text = read_txt_file(filepath)
     except Exception as e:
-        print 'faile to read text'
+        print 'faild to read text'
         traceback.print_exc()
 else:
-    print 'Need text data to Babelfy. See --help option for usage.'
+    print 'need text data to babelfy. see --help option for usage.'
     sys.exit()
 
 # Ensure input text is an instance of unicode.
