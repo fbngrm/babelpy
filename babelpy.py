@@ -6,6 +6,7 @@ from babelfy import BabelfyClient
 from config.config import API_KEY, LANG
 from pprint import pprint
 import sys
+import traceback
 
 
 # Parse the command-line arguments.
@@ -16,7 +17,11 @@ if args.get('text'):
     text = args.get('text')
 elif args.get('text_file'):
     filepath = args.get('text_file')
-    text = read_txt_file(filepath)
+    try:
+        text = read_txt_file(filepath)
+    except Exception as e:
+        print 'faile to read text'
+        traceback.print_exc()
 else:
     print 'Need text data to Babelfy. See --help option for usage.'
     sys.exit()
@@ -30,8 +35,11 @@ text = ' '.join(x.strip() for x in text.split())
 
 # Split the text into sentences.
 text_list = [x.strip() + '.' for x in text.split('.')] or [text]
-if text[-1] == '.':
-    text_list = text_list[:-1]
+try:
+    if text[-1] == '.':
+        text_list = text_list[:-1]
+except:
+    pass
 
 # Instantiate BabelFy client.
 params = dict()
@@ -47,7 +55,10 @@ all_merged_entities = list()
 # Babelfy the the text, sentence by sentence.
 for sentence in text_list:
     # Babelfy sentence.
-    babel_client.babelfy(sentence)
+    try:
+        babel_client.babelfy(sentence)
+    except Exception as e:
+        traceback.print_exc()
 
     # Get entity data.
     if args.get('entities'):
@@ -93,7 +104,11 @@ if args.get('export'):
     if args.get('all_merged_entities'):
         output_data['all_merged_entities'] = all_merged_entities
 
-    dump_json(output_data, filename)
+    try:
+        dump_json(output_data, filename)
+    except Exception as e:
+        print 'failed to write file'
+        traceback.print_exc()
 
 # Print to stdout.
 if args.get('print'):
