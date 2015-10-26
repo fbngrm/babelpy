@@ -3,8 +3,8 @@ import argparse
 
 
 def parse():
-    """parse arguments supplied by cmd-line
-    """
+        """parse arguments supplied by cmd-line
+        """
         parser = argparse.ArgumentParser(
             description='BabelFy Entity Tagger',
             formatter_class=argparse.RawTextHelpFormatter

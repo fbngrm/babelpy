@@ -81,6 +81,8 @@ class BabelfyClient(object):
         params = params or self._params
         params['key'] = self._api_key
         params['text'] = self._text
+        if isinstance(params['text'], unicode):
+            params['text'] = params['text'].encode('utf-8')
         url = BABELFY_API_URL + '?' + urllib.urlencode(params)
 
         request = urllib2.Request(url)

@@ -34,7 +34,13 @@ if isinstance(text, str):
 text = ' '.join(x.strip() for x in text.split())
 
 # Split the text into sentences.
-text_list = [x.strip() + '.' for x in text.split('.')] or [text]
+text_list = list()
+for txt in text.split('.'):
+    sentence = txt.strip() + '.'
+    if isinstance(sentence, str):
+        sentence = sentence.decode('utf-8')
+    text_list.append(sentence)
+
 try:
     if text[-1] == '.':
         text_list = text_list[:-1]
