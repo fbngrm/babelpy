@@ -30,7 +30,7 @@ else:
 if isinstance(text, str):
     text = text.decode('utf-8')
 
-# Remove mltiple whitspaces from the text.
+# Remove multiple whitspaces from the text.
 text = ' '.join(x.strip() for x in text.split())
 
 # Split the text into sentences.
