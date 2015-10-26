@@ -1,0 +1,1594 @@
+{
+    "all_merged_entities": [
+        [
+            {
+                "start": 0, 
+                "is_entity": false, 
+                "end": 4, 
+                "text": "Since"
+            }, 
+            {
+                "start": 6, 
+                "is_entity": true, 
+                "end": 11, 
+                "text": "Python"
+            }, 
+            {
+                "start": 13, 
+                "is_entity": true, 
+                "end": 14, 
+                "text": "is"
+            }, 
+            {
+                "start": 16, 
+                "is_entity": false, 
+                "end": 16, 
+                "text": "a"
+            }, 
+            {
+                "start": 18, 
+                "is_entity": true, 
+                "end": 43, 
+                "text": "dynamically typed language"
+            }, 
+            {
+                "start": 36, 
+                "is_entity": false, 
+                "end": 44, 
+                "text": "language,"
+            }, 
+            {
+                "start": 46, 
+                "is_entity": true, 
+                "end": 51, 
+                "text": "Python"
+            }, 
+            {
+                "start": 53, 
+                "is_entity": false, 
+                "end": 59, 
+                "text": "values,"
+            }, 
+            {
+                "start": 61, 
+                "is_entity": true, 
+                "end": 63, 
+                "text": "not"
+            }, 
+            {
+                "start": 65, 
+                "is_entity": false, 
+                "end": 74, 
+                "text": "variables,"
+            }, 
+            {
+                "start": 76, 
+                "is_entity": true, 
+                "end": 80, 
+                "text": "carry"
+            }, 
+            {
+                "start": 82, 
+                "is_entity": false, 
+                "end": 86, 
+                "text": "type,"
+            }, 
+            {
+                "start": 88, 
+                "is_entity": false, 
+                "end": 91, 
+                "text": "this"
+            }, 
+            {
+                "start": 93, 
+                "is_entity": true, 
+                "end": 95, 
+                "text": "has"
+            }, 
+            {
+                "start": 97, 
+                "is_entity": true, 
+                "end": 108, 
+                "text": "implications"
+            }, 
+            {
+                "start": 110, 
+                "is_entity": false, 
+                "end": 112, 
+                "text": "for"
+            }, 
+            {
+                "start": 114, 
+                "is_entity": true, 
+                "end": 117, 
+                "text": "many"
+            }, 
+            {
+                "start": 119, 
+                "is_entity": true, 
+                "end": 125, 
+                "text": "aspects"
+            }, 
+            {
+                "start": 127, 
+                "is_entity": false, 
+                "end": 128, 
+                "text": "of"
+            }, 
+            {
+                "start": 130, 
+                "is_entity": false, 
+                "end": 132, 
+                "text": "the"
+            }, 
+            {
+                "start": 134, 
+                "is_entity": true, 
+                "end": 136, 
+                "text": "way"
+            }, 
+            {
+                "start": 138, 
+                "is_entity": false, 
+                "end": 140, 
+                "text": "the"
+            }, 
+            {
+                "start": 142, 
+                "is_entity": true, 
+                "end": 159, 
+                "text": "language functions"
+            }, 
+            {
+                "start": 160, 
+                "is_entity": false, 
+                "end": 160, 
+                "text": "."
+            }
+        ], 
+        [
+            {
+                "start": 0, 
+                "is_entity": true, 
+                "end": 21, 
+                "text": "Cascading Style Sheets"
+            }, 
+            {
+                "start": 23, 
+                "is_entity": false, 
+                "end": 27, 
+                "text": "(CSS)"
+            }, 
+            {
+                "start": 29, 
+                "is_entity": true, 
+                "end": 30, 
+                "text": "is"
+            }, 
+            {
+                "start": 32, 
+                "is_entity": false, 
+                "end": 32, 
+                "text": "a"
+            }, 
+            {
+                "start": 34, 
+                "is_entity": true, 
+                "end": 53, 
+                "text": "style sheet language"
+            }, 
+            {
+                "start": 55, 
+                "is_entity": true, 
+                "end": 58, 
+                "text": "used"
+            }, 
+            {
+                "start": 60, 
+                "is_entity": false, 
+                "end": 62, 
+                "text": "for"
+            }, 
+            {
+                "start": 64, 
+                "is_entity": true, 
+                "end": 73, 
+                "text": "describing"
+            }, 
+            {
+                "start": 75, 
+                "is_entity": false, 
+                "end": 77, 
+                "text": "the"
+            }, 
+            {
+                "start": 79, 
+                "is_entity": true, 
+                "end": 90, 
+                "text": "presentation"
+            }, 
+            {
+                "start": 92, 
+                "is_entity": false, 
+                "end": 93, 
+                "text": "of"
+            }, 
+            {
+                "start": 95, 
+                "is_entity": false, 
+                "end": 95, 
+                "text": "a"
+            }, 
+            {
+                "start": 97, 
+                "is_entity": true, 
+                "end": 104, 
+                "text": "document"
+            }, 
+            {
+                "start": 106, 
+                "is_entity": true, 
+                "end": 112, 
+                "text": "written"
+            }, 
+            {
+                "start": 114, 
+                "is_entity": false, 
+                "end": 115, 
+                "text": "in"
+            }, 
+            {
+                "start": 117, 
+                "is_entity": false, 
+                "end": 117, 
+                "text": "a"
+            }, 
+            {
+                "start": 119, 
+                "is_entity": false, 
+                "end": 124, 
+                "text": "markup"
+            }, 
+            {
+                "start": 126, 
+                "is_entity": false, 
+                "end": 133, 
+                "text": "language"
+            }, 
+            {
+                "start": 134, 
+                "is_entity": false, 
+                "end": 134, 
+                "text": "."
+            }
+        ], 
+        [
+            {
+                "start": 0, 
+                "is_entity": false, 
+                "end": 7, 
+                "text": "Although"
+            }, 
+            {
+                "start": 9, 
+                "is_entity": true, 
+                "end": 12, 
+                "text": "most"
+            }, 
+            {
+                "start": 14, 
+                "is_entity": true, 
+                "end": 18, 
+                "text": "often"
+            }, 
+            {
+                "start": 20, 
+                "is_entity": true, 
+                "end": 23, 
+                "text": "used"
+            }, 
+            {
+                "start": 25, 
+                "is_entity": false, 
+                "end": 26, 
+                "text": "to"
+            }, 
+            {
+                "start": 28, 
+                "is_entity": true, 
+                "end": 30, 
+                "text": "set"
+            }, 
+            {
+                "start": 32, 
+                "is_entity": false, 
+                "end": 34, 
+                "text": "the"
+            }, 
+            {
+                "start": 36, 
+                "is_entity": true, 
+                "end": 41, 
+                "text": "visual"
+            }, 
+            {
+                "start": 43, 
+                "is_entity": true, 
+                "end": 47, 
+                "text": "style"
+            }, 
+            {
+                "start": 49, 
+                "is_entity": false, 
+                "end": 50, 
+                "text": "of"
+            }, 
+            {
+                "start": 52, 
+                "is_entity": true, 
+                "end": 60, 
+                "text": "web pages"
+            }, 
+            {
+                "start": 62, 
+                "is_entity": true, 
+                "end": 64, 
+                "text": "and"
+            }, 
+            {
+                "start": 66, 
+                "is_entity": true, 
+                "end": 80, 
+                "text": "user interfaces"
+            }, 
+            {
+                "start": 82, 
+                "is_entity": true, 
+                "end": 88, 
+                "text": "written"
+            }, 
+            {
+                "start": 90, 
+                "is_entity": false, 
+                "end": 91, 
+                "text": "in"
+            }, 
+            {
+                "start": 93, 
+                "is_entity": true, 
+                "end": 96, 
+                "text": "HTML"
+            }, 
+            {
+                "start": 98, 
+                "is_entity": false, 
+                "end": 100, 
+                "text": "and"
+            }, 
+            {
+                "start": 102, 
+                "is_entity": false, 
+                "end": 107, 
+                "text": "XHTML,"
+            }, 
+            {
+                "start": 109, 
+                "is_entity": false, 
+                "end": 111, 
+                "text": "the"
+            }, 
+            {
+                "start": 113, 
+                "is_entity": true, 
+                "end": 120, 
+                "text": "language"
+            }, 
+            {
+                "start": 122, 
+                "is_entity": true, 
+                "end": 124, 
+                "text": "can"
+            }, 
+            {
+                "start": 126, 
+                "is_entity": true, 
+                "end": 127, 
+                "text": "be"
+            }, 
+            {
+                "start": 129, 
+                "is_entity": true, 
+                "end": 135, 
+                "text": "applied"
+            }, 
+            {
+                "start": 137, 
+                "is_entity": false, 
+                "end": 138, 
+                "text": "to"
+            }, 
+            {
+                "start": 140, 
+                "is_entity": false, 
+                "end": 142, 
+                "text": "any"
+            }, 
+            {
+                "start": 144, 
+                "is_entity": true, 
+                "end": 155, 
+                "text": "XML document"
+            }, 
+            {
+                "start": 148, 
+                "is_entity": false, 
+                "end": 156, 
+                "text": "document,"
+            }, 
+            {
+                "start": 158, 
+                "is_entity": false, 
+                "end": 166, 
+                "text": "including"
+            }, 
+            {
+                "start": 168, 
+                "is_entity": true, 
+                "end": 172, 
+                "text": "plain"
+            }, 
+            {
+                "start": 174, 
+                "is_entity": false, 
+                "end": 177, 
+                "text": "XML,"
+            }, 
+            {
+                "start": 179, 
+                "is_entity": true, 
+                "end": 181, 
+                "text": "SVG"
+            }, 
+            {
+                "start": 183, 
+                "is_entity": false, 
+                "end": 185, 
+                "text": "and"
+            }, 
+            {
+                "start": 187, 
+                "is_entity": false, 
+                "end": 190, 
+                "text": "XUL,"
+            }, 
+            {
+                "start": 192, 
+                "is_entity": false, 
+                "end": 194, 
+                "text": "and"
+            }, 
+            {
+                "start": 196, 
+                "is_entity": true, 
+                "end": 197, 
+                "text": "is"
+            }, 
+            {
+                "start": 199, 
+                "is_entity": true, 
+                "end": 208, 
+                "text": "applicable"
+            }, 
+            {
+                "start": 210, 
+                "is_entity": true, 
+                "end": 211, 
+                "text": "to"
+            }, 
+            {
+                "start": 213, 
+                "is_entity": false, 
+                "end": 221, 
+                "text": "rendering"
+            }, 
+            {
+                "start": 223, 
+                "is_entity": false, 
+                "end": 224, 
+                "text": "in"
+            }, 
+            {
+                "start": 226, 
+                "is_entity": false, 
+                "end": 232, 
+                "text": "speech,"
+            }, 
+            {
+                "start": 234, 
+                "is_entity": false, 
+                "end": 235, 
+                "text": "or"
+            }, 
+            {
+                "start": 237, 
+                "is_entity": false, 
+                "end": 238, 
+                "text": "on"
+            }, 
+            {
+                "start": 240, 
+                "is_entity": true, 
+                "end": 244, 
+                "text": "other"
+            }, 
+            {
+                "start": 246, 
+                "is_entity": true, 
+                "end": 250, 
+                "text": "media"
+            }, 
+            {
+                "start": 251, 
+                "is_entity": false, 
+                "end": 251, 
+                "text": "."
+            }
+        ], 
+        [
+            {
+                "start": 0, 
+                "is_entity": false, 
+                "end": 4, 
+                "text": "Along"
+            }, 
+            {
+                "start": 6, 
+                "is_entity": false, 
+                "end": 9, 
+                "text": "with"
+            }, 
+            {
+                "start": 11, 
+                "is_entity": true, 
+                "end": 14, 
+                "text": "HTML"
+            }, 
+            {
+                "start": 16, 
+                "is_entity": false, 
+                "end": 18, 
+                "text": "and"
+            }, 
+            {
+                "start": 20, 
+                "is_entity": false, 
+                "end": 30, 
+                "text": "JavaScript,"
+            }, 
+            {
+                "start": 32, 
+                "is_entity": false, 
+                "end": 34, 
+                "text": "CSS"
+            }, 
+            {
+                "start": 36, 
+                "is_entity": false, 
+                "end": 37, 
+                "text": "is"
+            }, 
+            {
+                "start": 39, 
+                "is_entity": false, 
+                "end": 39, 
+                "text": "a"
+            }, 
+            {
+                "start": 41, 
+                "is_entity": true, 
+                "end": 51, 
+                "text": "cornerstone"
+            }, 
+            {
+                "start": 53, 
+                "is_entity": true, 
+                "end": 62, 
+                "text": "technology"
+            }, 
+            {
+                "start": 64, 
+                "is_entity": true, 
+                "end": 67, 
+                "text": "used"
+            }, 
+            {
+                "start": 69, 
+                "is_entity": false, 
+                "end": 70, 
+                "text": "by"
+            }, 
+            {
+                "start": 72, 
+                "is_entity": true, 
+                "end": 75, 
+                "text": "most"
+            }, 
+            {
+                "start": 77, 
+                "is_entity": false, 
+                "end": 84, 
+                "text": "websites"
+            }, 
+            {
+                "start": 86, 
+                "is_entity": false, 
+                "end": 87, 
+                "text": "to"
+            }, 
+            {
+                "start": 89, 
+                "is_entity": true, 
+                "end": 94, 
+                "text": "create"
+            }, 
+            {
+                "start": 96, 
+                "is_entity": true, 
+                "end": 103, 
+                "text": "visually"
+            }, 
+            {
+                "start": 105, 
+                "is_entity": true, 
+                "end": 112, 
+                "text": "engaging"
+            }, 
+            {
+                "start": 114, 
+                "is_entity": false, 
+                "end": 122, 
+                "text": "webpages,"
+            }, 
+            {
+                "start": 124, 
+                "is_entity": true, 
+                "end": 138, 
+                "text": "user interfaces"
+            }, 
+            {
+                "start": 140, 
+                "is_entity": false, 
+                "end": 142, 
+                "text": "for"
+            }, 
+            {
+                "start": 144, 
+                "is_entity": true, 
+                "end": 159, 
+                "text": "web applications"
+            }, 
+            {
+                "start": 148, 
+                "is_entity": false, 
+                "end": 160, 
+                "text": "applications,"
+            }, 
+            {
+                "start": 162, 
+                "is_entity": false, 
+                "end": 164, 
+                "text": "and"
+            }, 
+            {
+                "start": 166, 
+                "is_entity": true, 
+                "end": 180, 
+                "text": "user interfaces"
+            }, 
+            {
+                "start": 182, 
+                "is_entity": false, 
+                "end": 184, 
+                "text": "for"
+            }, 
+            {
+                "start": 186, 
+                "is_entity": true, 
+                "end": 189, 
+                "text": "many"
+            }, 
+            {
+                "start": 191, 
+                "is_entity": true, 
+                "end": 209, 
+                "text": "mobile applications"
+            }, 
+            {
+                "start": 210, 
+                "is_entity": false, 
+                "end": 210, 
+                "text": "."
+            }
+        ], 
+        [
+            {
+                "start": 0, 
+                "is_entity": false, 
+                "end": 2, 
+                "text": "The"
+            }, 
+            {
+                "start": 4, 
+                "is_entity": true, 
+                "end": 7, 
+                "text": "city"
+            }, 
+            {
+                "start": 9, 
+                "is_entity": true, 
+                "end": 10, 
+                "text": "is"
+            }, 
+            {
+                "start": 12, 
+                "is_entity": true, 
+                "end": 17, 
+                "text": "served"
+            }, 
+            {
+                "start": 19, 
+                "is_entity": false, 
+                "end": 20, 
+                "text": "by"
+            }, 
+            {
+                "start": 22, 
+                "is_entity": false, 
+                "end": 23, 
+                "text": "an"
+            }, 
+            {
+                "start": 25, 
+                "is_entity": true, 
+                "end": 33, 
+                "text": "extensive"
+            }, 
+            {
+                "start": 35, 
+                "is_entity": true, 
+                "end": 41, 
+                "text": "transit"
+            }, 
+            {
+                "start": 43, 
+                "is_entity": false, 
+                "end": 50, 
+                "text": "network,"
+            }, 
+            {
+                "start": 52, 
+                "is_entity": false, 
+                "end": 56, 
+                "text": "which"
+            }, 
+            {
+                "start": 58, 
+                "is_entity": true, 
+                "end": 65, 
+                "text": "includes"
+            }, 
+            {
+                "start": 67, 
+                "is_entity": false, 
+                "end": 70, 
+                "text": "four"
+            }, 
+            {
+                "start": 72, 
+                "is_entity": true, 
+                "end": 84, 
+                "text": "international"
+            }, 
+            {
+                "start": 86, 
+                "is_entity": false, 
+                "end": 94, 
+                "text": "airports,"
+            }, 
+            {
+                "start": 96, 
+                "is_entity": false, 
+                "end": 99, 
+                "text": "nine"
+            }, 
+            {
+                "start": 101, 
+                "is_entity": true, 
+                "end": 117, 
+                "text": "railway terminals"
+            }, 
+            {
+                "start": 109, 
+                "is_entity": false, 
+                "end": 118, 
+                "text": "terminals,"
+            }, 
+            {
+                "start": 120, 
+                "is_entity": true, 
+                "end": 127, 
+                "text": "numerous"
+            }, 
+            {
+                "start": 129, 
+                "is_entity": false, 
+                "end": 134, 
+                "text": "trams,"
+            }, 
+            {
+                "start": 136, 
+                "is_entity": false, 
+                "end": 136, 
+                "text": "a"
+            }, 
+            {
+                "start": 138, 
+                "is_entity": true, 
+                "end": 152, 
+                "text": "monorail system"
+            }, 
+            {
+                "start": 154, 
+                "is_entity": false, 
+                "end": 156, 
+                "text": "and"
+            }, 
+            {
+                "start": 158, 
+                "is_entity": false, 
+                "end": 160, 
+                "text": "one"
+            }, 
+            {
+                "start": 162, 
+                "is_entity": false, 
+                "end": 163, 
+                "text": "of"
+            }, 
+            {
+                "start": 165, 
+                "is_entity": false, 
+                "end": 167, 
+                "text": "the"
+            }, 
+            {
+                "start": 169, 
+                "is_entity": true, 
+                "end": 175, 
+                "text": "deepest"
+            }, 
+            {
+                "start": 177, 
+                "is_entity": true, 
+                "end": 187, 
+                "text": "underground"
+            }, 
+            {
+                "start": 189, 
+                "is_entity": true, 
+                "end": 201, 
+                "text": "metro systems"
+            }, 
+            {
+                "start": 203, 
+                "is_entity": false, 
+                "end": 204, 
+                "text": "in"
+            }, 
+            {
+                "start": 206, 
+                "is_entity": false, 
+                "end": 208, 
+                "text": "the"
+            }, 
+            {
+                "start": 210, 
+                "is_entity": false, 
+                "end": 215, 
+                "text": "world,"
+            }, 
+            {
+                "start": 217, 
+                "is_entity": false, 
+                "end": 219, 
+                "text": "the"
+            }, 
+            {
+                "start": 221, 
+                "is_entity": true, 
+                "end": 232, 
+                "text": "Moscow Metro"
+            }, 
+            {
+                "start": 228, 
+                "is_entity": false, 
+                "end": 233, 
+                "text": "Metro,"
+            }, 
+            {
+                "start": 235, 
+                "is_entity": false, 
+                "end": 237, 
+                "text": "the"
+            }, 
+            {
+                "start": 239, 
+                "is_entity": false, 
+                "end": 252, 
+                "text": "fourth-largest"
+            }, 
+            {
+                "start": 254, 
+                "is_entity": false, 
+                "end": 255, 
+                "text": "in"
+            }, 
+            {
+                "start": 257, 
+                "is_entity": false, 
+                "end": 259, 
+                "text": "the"
+            }, 
+            {
+                "start": 261, 
+                "is_entity": true, 
+                "end": 265, 
+                "text": "world"
+            }, 
+            {
+                "start": 267, 
+                "is_entity": false, 
+                "end": 269, 
+                "text": "and"
+            }, 
+            {
+                "start": 271, 
+                "is_entity": true, 
+                "end": 277, 
+                "text": "largest"
+            }, 
+            {
+                "start": 279, 
+                "is_entity": true, 
+                "end": 285, 
+                "text": "outside"
+            }, 
+            {
+                "start": 287, 
+                "is_entity": false, 
+                "end": 288, 
+                "text": "of"
+            }, 
+            {
+                "start": 290, 
+                "is_entity": true, 
+                "end": 293, 
+                "text": "Asia"
+            }, 
+            {
+                "start": 295, 
+                "is_entity": false, 
+                "end": 296, 
+                "text": "in"
+            }, 
+            {
+                "start": 298, 
+                "is_entity": true, 
+                "end": 302, 
+                "text": "terms"
+            }, 
+            {
+                "start": 304, 
+                "is_entity": false, 
+                "end": 305, 
+                "text": "of"
+            }, 
+            {
+                "start": 307, 
+                "is_entity": true, 
+                "end": 315, 
+                "text": "passenger"
+            }, 
+            {
+                "start": 317, 
+                "is_entity": false, 
+                "end": 324, 
+                "text": "numbers,"
+            }, 
+            {
+                "start": 326, 
+                "is_entity": false, 
+                "end": 328, 
+                "text": "and"
+            }, 
+            {
+                "start": 330, 
+                "is_entity": false, 
+                "end": 332, 
+                "text": "the"
+            }, 
+            {
+                "start": 334, 
+                "is_entity": true, 
+                "end": 340, 
+                "text": "busiest"
+            }, 
+            {
+                "start": 342, 
+                "is_entity": false, 
+                "end": 343, 
+                "text": "in"
+            }, 
+            {
+                "start": 345, 
+                "is_entity": false, 
+                "end": 350, 
+                "text": "Europe"
+            }, 
+            {
+                "start": 351, 
+                "is_entity": false, 
+                "end": 351, 
+                "text": "."
+            }
+        ], 
+        [
+            {
+                "start": 0, 
+                "is_entity": false, 
+                "end": 1, 
+                "text": "It"
+            }, 
+            {
+                "start": 3, 
+                "is_entity": true, 
+                "end": 4, 
+                "text": "is"
+            }, 
+            {
+                "start": 6, 
+                "is_entity": true, 
+                "end": 15, 
+                "text": "recognized"
+            }, 
+            {
+                "start": 17, 
+                "is_entity": false, 
+                "end": 18, 
+                "text": "as"
+            }, 
+            {
+                "start": 20, 
+                "is_entity": false, 
+                "end": 22, 
+                "text": "one"
+            }, 
+            {
+                "start": 24, 
+                "is_entity": false, 
+                "end": 25, 
+                "text": "of"
+            }, 
+            {
+                "start": 27, 
+                "is_entity": false, 
+                "end": 29, 
+                "text": "the"
+            }, 
+            {
+                "start": 31, 
+                "is_entity": true, 
+                "end": 35, 
+                "text": "citys"
+            }, 
+            {
+                "start": 37, 
+                "is_entity": true, 
+                "end": 45, 
+                "text": "landmarks"
+            }, 
+            {
+                "start": 47, 
+                "is_entity": true, 
+                "end": 49, 
+                "text": "due"
+            }, 
+            {
+                "start": 51, 
+                "is_entity": false, 
+                "end": 52, 
+                "text": "to"
+            }, 
+            {
+                "start": 54, 
+                "is_entity": false, 
+                "end": 56, 
+                "text": "the"
+            }, 
+            {
+                "start": 58, 
+                "is_entity": true, 
+                "end": 61, 
+                "text": "rich"
+            }, 
+            {
+                "start": 63, 
+                "is_entity": false, 
+                "end": 65, 
+                "text": "and"
+            }, 
+            {
+                "start": 67, 
+                "is_entity": true, 
+                "end": 72, 
+                "text": "varied"
+            }, 
+            {
+                "start": 74, 
+                "is_entity": true, 
+                "end": 85, 
+                "text": "architecture"
+            }, 
+            {
+                "start": 87, 
+                "is_entity": false, 
+                "end": 88, 
+                "text": "of"
+            }, 
+            {
+                "start": 90, 
+                "is_entity": false, 
+                "end": 92, 
+                "text": "its"
+            }, 
+            {
+                "start": 94, 
+                "is_entity": false, 
+                "end": 96, 
+                "text": "197"
+            }, 
+            {
+                "start": 98, 
+                "is_entity": true, 
+                "end": 105, 
+                "text": "stations"
+            }, 
+            {
+                "start": 106, 
+                "is_entity": false, 
+                "end": 106, 
+                "text": "."
+            }
+        ], 
+        [
+            {
+                "start": 0, 
+                "is_entity": false, 
+                "end": 3, 
+                "text": "Over"
+            }, 
+            {
+                "start": 5, 
+                "is_entity": false, 
+                "end": 9, 
+                "text": "time,"
+            }, 
+            {
+                "start": 11, 
+                "is_entity": false, 
+                "end": 16, 
+                "text": "Moscow"
+            }, 
+            {
+                "start": 18, 
+                "is_entity": true, 
+                "end": 20, 
+                "text": "has"
+            }, 
+            {
+                "start": 22, 
+                "is_entity": true, 
+                "end": 29, 
+                "text": "acquired"
+            }, 
+            {
+                "start": 31, 
+                "is_entity": false, 
+                "end": 31, 
+                "text": "a"
+            }, 
+            {
+                "start": 33, 
+                "is_entity": true, 
+                "end": 38, 
+                "text": "number"
+            }, 
+            {
+                "start": 40, 
+                "is_entity": false, 
+                "end": 41, 
+                "text": "of"
+            }, 
+            {
+                "start": 43, 
+                "is_entity": false, 
+                "end": 51, 
+                "text": "epithets,"
+            }, 
+            {
+                "start": 53, 
+                "is_entity": true, 
+                "end": 56, 
+                "text": "most"
+            }, 
+            {
+                "start": 58, 
+                "is_entity": true, 
+                "end": 66, 
+                "text": "referring"
+            }, 
+            {
+                "start": 68, 
+                "is_entity": false, 
+                "end": 69, 
+                "text": "to"
+            }, 
+            {
+                "start": 71, 
+                "is_entity": false, 
+                "end": 73, 
+                "text": "its"
+            }, 
+            {
+                "start": 75, 
+                "is_entity": true, 
+                "end": 78, 
+                "text": "size"
+            }, 
+            {
+                "start": 80, 
+                "is_entity": false, 
+                "end": 82, 
+                "text": "and"
+            }, 
+            {
+                "start": 84, 
+                "is_entity": true, 
+                "end": 93, 
+                "text": "preeminent"
+            }, 
+            {
+                "start": 95, 
+                "is_entity": true, 
+                "end": 100, 
+                "text": "status"
+            }, 
+            {
+                "start": 102, 
+                "is_entity": false, 
+                "end": 107, 
+                "text": "within"
+            }, 
+            {
+                "start": 109, 
+                "is_entity": false, 
+                "end": 111, 
+                "text": "the"
+            }, 
+            {
+                "start": 113, 
+                "is_entity": false, 
+                "end": 119, 
+                "text": "nation:"
+            }, 
+            {
+                "start": 121, 
+                "is_entity": true, 
+                "end": 134, 
+                "text": "The Third Rome"
+            }, 
+            {
+                "start": 131, 
+                "is_entity": false, 
+                "end": 135, 
+                "text": "Rome,"
+            }, 
+            {
+                "start": 137, 
+                "is_entity": false, 
+                "end": 139, 
+                "text": "The"
+            }, 
+            {
+                "start": 141, 
+                "is_entity": false, 
+                "end": 150, 
+                "text": "Whitestone"
+            }, 
+            {
+                "start": 152, 
+                "is_entity": false, 
+                "end": 155, 
+                "text": "One,"
+            }, 
+            {
+                "start": 157, 
+                "is_entity": false, 
+                "end": 159, 
+                "text": "The"
+            }, 
+            {
+                "start": 161, 
+                "is_entity": true, 
+                "end": 165, 
+                "text": "First"
+            }, 
+            {
+                "start": 167, 
+                "is_entity": false, 
+                "end": 173, 
+                "text": "Throne,"
+            }, 
+            {
+                "start": 175, 
+                "is_entity": false, 
+                "end": 177, 
+                "text": "The"
+            }, 
+            {
+                "start": 179, 
+                "is_entity": false, 
+                "end": 183, 
+                "text": "Forty"
+            }, 
+            {
+                "start": 185, 
+                "is_entity": false, 
+                "end": 192, 
+                "text": "Forties,"
+            }, 
+            {
+                "start": 194, 
+                "is_entity": false, 
+                "end": 196, 
+                "text": "and"
+            }, 
+            {
+                "start": 198, 
+                "is_entity": false, 
+                "end": 200, 
+                "text": "The"
+            }, 
+            {
+                "start": 202, 
+                "is_entity": false, 
+                "end": 205, 
+                "text": "Hero"
+            }, 
+            {
+                "start": 207, 
+                "is_entity": false, 
+                "end": 214, 
+                "text": "Cityself"
+            }, 
+            {
+                "start": 215, 
+                "is_entity": false, 
+                "end": 215, 
+                "text": "."
+            }
+        ], 
+        [
+            {
+                "start": 0, 
+                "is_entity": false, 
+                "end": 1, 
+                "text": "In"
+            }, 
+            {
+                "start": 3, 
+                "is_entity": true, 
+                "end": 5, 
+                "text": "old"
+            }, 
+            {
+                "start": 7, 
+                "is_entity": true, 
+                "end": 13, 
+                "text": "Russian"
+            }, 
+            {
+                "start": 15, 
+                "is_entity": false, 
+                "end": 17, 
+                "text": "the"
+            }, 
+            {
+                "start": 19, 
+                "is_entity": true, 
+                "end": 22, 
+                "text": "word"
+            }, 
+            {
+                "start": 24, 
+                "is_entity": false, 
+                "end": 30, 
+                "text": "(forty)"
+            }, 
+            {
+                "start": 32, 
+                "is_entity": true, 
+                "end": 35, 
+                "text": "also"
+            }, 
+            {
+                "start": 37, 
+                "is_entity": true, 
+                "end": 41, 
+                "text": "meant"
+            }, 
+            {
+                "start": 43, 
+                "is_entity": false, 
+                "end": 43, 
+                "text": "a"
+            }, 
+            {
+                "start": 45, 
+                "is_entity": true, 
+                "end": 50, 
+                "text": "church"
+            }, 
+            {
+                "start": 52, 
+                "is_entity": true, 
+                "end": 74, 
+                "text": "administrative district"
+            }, 
+            {
+                "start": 67, 
+                "is_entity": false, 
+                "end": 75, 
+                "text": "district,"
+            }, 
+            {
+                "start": 77, 
+                "is_entity": false, 
+                "end": 81, 
+                "text": "which"
+            }, 
+            {
+                "start": 83, 
+                "is_entity": true, 
+                "end": 91, 
+                "text": "consisted"
+            }, 
+            {
+                "start": 93, 
+                "is_entity": false, 
+                "end": 94, 
+                "text": "of"
+            }, 
+            {
+                "start": 96, 
+                "is_entity": true, 
+                "end": 100, 
+                "text": "about"
+            }, 
+            {
+                "start": 102, 
+                "is_entity": false, 
+                "end": 106, 
+                "text": "forty"
+            }, 
+            {
+                "start": 108, 
+                "is_entity": false, 
+                "end": 115, 
+                "text": "churches"
+            }, 
+            {
+                "start": 116, 
+                "is_entity": false, 
+                "end": 116, 
+                "text": "."
+            }
+        ], 
+        [
+            {
+                "start": 0, 
+                "is_entity": false, 
+                "end": 2, 
+                "text": "The"
+            }, 
+            {
+                "start": 4, 
+                "is_entity": true, 
+                "end": 10, 
+                "text": "demonym"
+            }, 
+            {
+                "start": 12, 
+                "is_entity": false, 
+                "end": 14, 
+                "text": "for"
+            }, 
+            {
+                "start": 16, 
+                "is_entity": false, 
+                "end": 16, 
+                "text": "a"
+            }, 
+            {
+                "start": 18, 
+                "is_entity": false, 
+                "end": 23, 
+                "text": "Moscow"
+            }, 
+            {
+                "start": 25, 
+                "is_entity": true, 
+                "end": 32, 
+                "text": "resident"
+            }, 
+            {
+                "start": 34, 
+                "is_entity": false, 
+                "end": 35, 
+                "text": "is"
+            }, 
+            {
+                "start": 37, 
+                "is_entity": false, 
+                "end": 47, 
+                "text": "(moskvich),"
+            }, 
+            {
+                "start": 49, 
+                "is_entity": true, 
+                "end": 56, 
+                "text": "rendered"
+            }, 
+            {
+                "start": 58, 
+                "is_entity": false, 
+                "end": 59, 
+                "text": "in"
+            }, 
+            {
+                "start": 61, 
+                "is_entity": true, 
+                "end": 67, 
+                "text": "English"
+            }, 
+            {
+                "start": 69, 
+                "is_entity": false, 
+                "end": 70, 
+                "text": "as"
+            }, 
+            {
+                "start": 72, 
+                "is_entity": true, 
+                "end": 80, 
+                "text": "Muscovite"
+            }, 
+            {
+                "start": 81, 
+                "is_entity": false, 
+                "end": 81, 
+                "text": "."
+            }
+        ]
+    ]
+}
