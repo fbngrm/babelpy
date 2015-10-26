@@ -125,7 +125,7 @@ class BabelfyClient(object):
             dot_token['start'] = (len(self._text) - 1)
             dot_token['end'] = dot_token['start']
             dot_token['text'] = '.'
-            dot_token['is_entity'] = False
+            dot_token['isEntity'] = False
             return dot_token
 
         if self._text.endswith('.'):

@@ -35,7 +35,7 @@ if text[-1] == '.':
 
 # Instantiate BabelFy client.
 params = dict()
-params['lang'] = LANG,
+params['lang'] = LANG
 babel_client = BabelfyClient(API_KEY, params)
 
 # Store parsed data.
