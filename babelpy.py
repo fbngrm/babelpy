@@ -3,14 +3,27 @@
 from parser import parse
 from reader import read_txt_file
 from babelfy import BabelfyClient
-from config.config import API_KEY, LANG
 from pprint import pprint
 import sys
 import traceback
+try:
+    from config.config import API_KEY, LANG
+except:
+    LANG = 'EN'
+    API_KEY = None
 
 
 # Parse the command-line arguments.
 args = parse()
+
+if not API_KEY:
+    API_KEY = args.get('api_key')
+    # Ensure input text is an instance of unicode.
+    if isinstance(API_KEY, str):
+        API_KEY = API_KEY.decode('utf-8')
+    elif not API_KEY:
+        print 'BabelFy API key is required.'
+        sys.exit()
 
 # Get the input text from cmd-line or file.
 if args.get('text'):
@@ -30,13 +43,10 @@ else:
 if isinstance(text, str):
     text = text.decode('utf-8')
 
-# Remove multiple whitspaces from the text.
-text = ' '.join(x.strip() for x in text.split())
-
 # Split the text into sentences.
 text_list = list()
-for txt in text.split('.'):
-    sentence = txt.strip() + '.'
+for txt in text:
+    sentence = txt.replace('\n', '').strip()
     if isinstance(sentence, str):
         sentence = sentence.decode('utf-8')
     text_list.append(sentence)
@@ -87,14 +97,14 @@ if args.get('export'):
     from dump import dump_json
 
     # Get the filename from cmd-line args.
-    filename = args.get('export')
+    dumppath = args.get('export')
 
     # Ensure filename is an instance of unicode.
-    if isinstance(filename, str):
-        filename = filename.decode('utf-8')
+    if isinstance(dumppath, str):
+        dumppath = dumppath.decode('utf-8')
 
-    filename = filename + '.json' if not filename.endswith('.json') \
-        else filename
+    dumppath = dumppath + '.json' if not dumppath.endswith('.json') \
+        else dumppath
 
     output_data = dict()
 
@@ -111,7 +121,7 @@ if args.get('export'):
         output_data['all_merged_entities'] = all_merged_entities
 
     try:
-        dump_json(output_data, filename)
+        dump_json(output_data, dumppath)
     except Exception as e:
         print 'failed to write file'
         traceback.print_exc()

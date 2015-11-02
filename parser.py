@@ -19,9 +19,15 @@ def parse():
         group.add_argument(
             '-tf',
             '--text-file',
-            help='path to the file containing the text to be annotated by \
-                BabelFy API',
+            help='path to the file containing the input text',
             metavar='',
+            )
+        parser.add_argument(
+            '-key',
+            '--api-key',
+            help='BabelFy API key',
+            metavar='',
+            required=False,
             )
         parser.add_argument(
             '-e',
