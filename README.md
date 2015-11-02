@@ -14,16 +14,16 @@ Python [BabelFy](http://babelfy.org) entity tagger. Can be used as a library or 
 
 **Options**
 ```
--h,  --help                 *show a help message and exit*
--key --api-key              *BabelFy API key*
--t   --text                 *text to be annotated by BabelFy API*
--tf  --text-file            *path to the file containing the input text*
--e,  --entities             *get entity data*
--ae  --all-entities         *get entity and non-entity data*
--m   --merged-entities      *get merged entities only*
--am  --all-merged-entities  *get all merged entities*
--p   --print                *dump all babelfy data to stdout*
--ex  --export               *filename of the output file*
+-h,  --help                 show a help message and exit
+-key --api-key              BabelFy API key
+-t   --text                 text to be annotated by BabelFy API
+-tf  --text-file            path to the file containing the input text
+-e,  --entities             get entity data
+-ae  --all-entities         get entity and non-entity data
+-m   --merged-entities      get merged entities only
+-am  --all-merged-entities  get all merged entities
+-p   --print                dump all babelfy data to stdout
+-ex  --export               filename of the output file
 ```
 
 **Example**
