@@ -27,7 +27,7 @@ if not API_KEY:
 
 # Get the input text from cmd-line or file.
 if args.get('text'):
-    text = args.get('text')
+    text = [args.get('text')]
 elif args.get('text_file'):
     filepath = args.get('text_file')
     try:
@@ -38,10 +38,6 @@ elif args.get('text_file'):
 else:
     print 'need text data to babelfy. see --help option for usage.'
     sys.exit()
-
-# Ensure input text is an instance of unicode.
-if isinstance(text, str):
-    text = text.decode('utf-8')
 
 # Split the text into sentences.
 text_list = list()

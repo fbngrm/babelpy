@@ -32,7 +32,7 @@ Python [BabelFy](http://babelfy.org) entity tagger. Can be used as a library or 
 
 See python babelpy.py -h for help.
 
-**Use as a library**
+### Use as a library
 ```
 from babelfy import BabelfyClient
 
