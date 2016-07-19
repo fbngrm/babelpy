@@ -34,7 +34,7 @@ elif args.get('text_file'):
         text = read_txt_file(filepath)
     except Exception as e:
         print 'faild to read text'
-        traceback.print_exc()
+        sys.exit()
 else:
     print 'need text data to babelfy. see --help option for usage.'
     sys.exit()
