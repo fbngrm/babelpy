@@ -7,6 +7,9 @@ Python [BabelFy](http://babelfy.org) entity tagger. Can be used as a library or 
 * wheel==0.24.0
 
 ## Usage
+
+Add your Babelfy API Key to the config file or provide it as an argument.
+
 ### Use as command-line tool
 
 ```python babelpy.py [-h] [-t  | -tf ] [-e] [-ae] [-m] [-am] [-p] [-ex]```
@@ -33,7 +36,7 @@ Python [BabelFy](http://babelfy.org) entity tagger. Can be used as a library or 
 See python babelpy.py -h for help.
 
 ### Use as a library
-```
+```python
 from babelfy import BabelfyClient
 
 
@@ -57,3 +60,12 @@ print babel_client.merged_entities
 # Get all merged entities.
 babel_client.all_merged_entities
 ```
+
+# Run Tests
+
+```bash
+python tests/run_tests.py
+```
+
+#License
+GNU - GPL 3.0
