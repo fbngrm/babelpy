@@ -2,10 +2,6 @@
 
 Python [BabelFy](http://babelfy.org) entity tagger. Can be used as a library or command-line tool.
 
-## Requirements
-* Python 2.7
-* wheel==0.24.0
-
 ## Usage
 
 Add your Babelfy API Key to the config file or provide it as an argument.
