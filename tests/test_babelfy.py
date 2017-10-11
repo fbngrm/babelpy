@@ -1,3 +1,5 @@
+from __future__ import print_function, unicode_literals, division, absolute_import
+
 import unittest
 import json
 from babelfy import BabelfyClient

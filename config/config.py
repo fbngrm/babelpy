@@ -1,3 +1,4 @@
+from __future__ import unicode_literals, absolute_import
 from os.path import abspath, join, dirname
 
 ROOT_PATH = abspath(join(dirname(__file__), '..'))

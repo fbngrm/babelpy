@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+from __future__ import print_function, unicode_literals, division, absolute_import
+
 from parser import parse
 from reader import read_txt_file
 from babelfy import BabelfyClient
@@ -18,11 +20,11 @@ args = parse()
 
 if not API_KEY:
     API_KEY = args.get('api_key')
-    # Ensure input text is an instance of unicode.
-    if isinstance(API_KEY, str):
+    # Ensure input text is unicode.
+    if (sys.version < '3' and isinstance(API_KEY, str)) or (sys.version > '3' and isinstance(API_KEY, bytes)):
         API_KEY = API_KEY.decode('utf-8')
     elif not API_KEY:
-        print 'BabelFy API key is required.'
+        print('BabelFy API key is required.', file=sys.stderr)
         sys.exit()
 
 # Get the input text from cmd-line or file.
@@ -33,17 +35,17 @@ elif args.get('text_file'):
     try:
         text = read_txt_file(filepath)
     except Exception as e:
-        print 'faild to read text'
+        print('failed to read text', file=sys.stderr)
         sys.exit()
 else:
-    print 'need text data to babelfy. see --help option for usage.'
+    print('need text data to babelfy. see --help option for usage.', file=sys.stderr)
     sys.exit()
 
 # Split the text into sentences.
 text_list = list()
 for txt in text:
     sentence = txt.replace('\n', '').strip()
-    if isinstance(sentence, str):
+    if (sys.version < '3' and isinstance(sentence, str)) or (sys.version > '3' and isinstance(sentence, bytes)):
         sentence = sentence.decode('utf-8')
     text_list.append(sentence)
 
@@ -95,8 +97,8 @@ if args.get('export'):
     # Get the filename from cmd-line args.
     dumppath = args.get('export')
 
-    # Ensure filename is an instance of unicode.
-    if isinstance(dumppath, str):
+    # Ensure filename is unicode
+    if (sys.version < '3' and isinstance(dumppath, str)) or (sys.version > '3' and isinstance(dumppath, bytes)):
         dumppath = dumppath.decode('utf-8')
 
     dumppath = dumppath + '.json' if not dumppath.endswith('.json') \
@@ -119,28 +121,28 @@ if args.get('export'):
     try:
         dump_json(output_data, dumppath)
     except Exception as e:
-        print 'failed to write file'
+        print('failed to write file',file=sys.stderr)
         traceback.print_exc()
 
 # Print to stdout.
 if args.get('print'):
 
     if args.get('entities'):
-        print '\nENTITIES'
+        print('\nENTITIES')
         for token in entities:
             pprint(token)
 
     if args.get('all_entities'):
-        print '\nALL ENTITIES'
+        print('\nALL ENTITIES')
         for token in all_entities:
             pprint(token)
 
     if args.get('merged_entities'):
-        print '\nMERGED ENTITIES'
+        print('\nMERGED ENTITIES')
         for token in merged_entities:
             pprint(token)
 
     if args.get('all_merged_entities'):
-        print '\nALL MERGED ENTITIES'
+        print('\nALL MERGED ENTITIES')
         for token in all_merged_entities:
             pprint(token)
