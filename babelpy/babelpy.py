@@ -9,7 +9,7 @@ from pprint import pprint
 import sys
 import traceback
 try:
-    from config.config import API_KEY, LANG
+    from babelpy.config.config import API_KEY, LANG
 except:
     LANG = 'EN'
     API_KEY = None
