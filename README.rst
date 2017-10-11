@@ -64,13 +64,13 @@ Use as a library
     babel_client.babelfy(TEXT_TO_BE_BABELFIED)
 
     # Get entity data.
-    print babel_client.entities
+    print(babel_client.entities)
 
     # Get entity and non-entity data.
-    print babel_client.all_entities
+    print(babel_client.all_entities)
 
     # Get merged entities only.
-    print babel_client.merged_entities
+    print(babel_client.merged_entities)
 
     # Get all merged entities.
     babel_client.all_merged_entities
