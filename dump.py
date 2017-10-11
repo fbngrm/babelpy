@@ -1,4 +1,3 @@
-#!/usr/bin/python
 from os.path import join, abspath
 from config.config import DUMP_PATH
 import json

@@ -1,6 +1,4 @@
-#!/usr/bin/python
 import argparse
-
 
 def parse():
         """parse arguments supplied by cmd-line

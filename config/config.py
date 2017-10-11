@@ -1,4 +1,3 @@
-#!/usr/bin/python
 from os.path import abspath, join, dirname
 
 ROOT_PATH = abspath(join(dirname(__file__), '..'))
