@@ -15,7 +15,7 @@ else:
     from urllib.request import Request, urlopen
     from urllib.parse import urlencode
     from itertools import product, filterfalse
-from config.config import BABELFY_API_URL
+from babelpy.config.config import BABELFY_API_URL
 
 
 class BabelfyClient:

@@ -2,9 +2,9 @@
 
 from __future__ import print_function, unicode_literals, division, absolute_import
 
-from parser import parse
-from reader import read_txt_file
-from babelfy import BabelfyClient
+from babelpy.parser import parse
+from babelpy.reader import read_txt_file
+from babelpy.babelfy import BabelfyClient
 from pprint import pprint
 import sys
 import traceback
