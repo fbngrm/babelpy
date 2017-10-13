@@ -94,7 +94,7 @@ def main():
 
     # Export to file.
     if args.get('export'):
-        from dump import dump_json
+        from babelpy.dump import dump_json
 
         # Get the filename from cmd-line args.
         dumppath = args.get('export')
