@@ -42,7 +42,7 @@ Use as command-line tool
 
 **Example**::
 
-    babelpy-tf ~/data/fashion.txt -am -ex ~/data/fashion.json
+    babelpy -tf ~/data/fashion.txt -am -ex ~/data/fashion.json
 
 See ``babelpy -h`` for help.
 
