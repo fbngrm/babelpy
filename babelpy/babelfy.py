@@ -4,6 +4,7 @@ import sys
 import json
 import gzip
 from operator import itemgetter
+import codecs
 if sys.version < '3':
     #Python 2
     from StringIO import StringIO #pylint: disable=import-error,wrong-import-order,no-name-in-module
@@ -101,15 +102,8 @@ class BabelfyClient:
         else:
             buf = BytesIO(response.read())
         f = gzip.GzipFile(fileobj=buf)
-        try:
-            self._data = json.loads(f.read())
-        except TypeError:
-            #older python
-            if sys.version < '3':
-                text = unicode(f.read(), 'utf-8')
-            else:
-                text = str(f.read(), 'utf-8')
-            self._data = json.loads(text)
+        reader = codecs.getreader('utf-8')
+        self._data = json.load(reader(f))
 
     def _parse_entities(self):
         """enrich the babelfied data with the text an the isEntity items
