@@ -101,7 +101,15 @@ class BabelfyClient:
         else:
             buf = BytesIO(response.read())
         f = gzip.GzipFile(fileobj=buf)
-        self._data = json.loads(f.read())
+        try:
+            self._data = json.loads(f.read())
+        except TypeError:
+            #older python
+            if sys.version < '3':
+                text = unicode(f.read(), 'utf-8')
+            else:
+                text = str(f.read(), 'utf-8')
+            self._data = json.loads(text)
 
     def _parse_entities(self):
         """enrich the babelfied data with the text an the isEntity items
