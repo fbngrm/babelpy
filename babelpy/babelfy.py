@@ -1,16 +1,25 @@
-#!/usr/bin/python
+from __future__ import print_function, unicode_literals, division, absolute_import
 
-import urllib2
-import urllib
+import sys
 import json
 import gzip
-from StringIO import StringIO
-from itertools import product, ifilterfalse
 from operator import itemgetter
-from config.config import BABELFY_API_URL
+import codecs
+if sys.version < '3':
+    #Python 2
+    from StringIO import StringIO #pylint: disable=import-error,wrong-import-order,no-name-in-module
+    from urllib2 import Request, urlopen #pylint: disable=import-error,wrong-import-order,no-name-in-module
+    from urllib import urlencode #pylint: disable=import-error,wrong-import-order,no-name-in-module
+    from itertools import product, ifilterfalse as filterfalse #pylint: disable=import-error,wrong-import-order,no-name-in-module
+else:
+    from io import StringIO, BytesIO
+    from urllib.request import Request, urlopen
+    from urllib.parse import urlencode
+    from itertools import product, filterfalse
+from babelpy.config.config import BABELFY_API_URL
 
 
-class BabelfyClient(object):
+class BabelfyClient:
     """API client for the babelfy api.
     http://babelfy.org/guide
     """
@@ -81,16 +90,20 @@ class BabelfyClient(object):
         params = params or self._params
         params['key'] = self._api_key
         params['text'] = self._text
-        if isinstance(params['text'], unicode):
+        if (sys.version < '3' and isinstance(params['text'], unicode)) or (sys.version >= '3' and isinstance(params['text'], bytes)): #pylint: disable=undefined-variable
             params['text'] = params['text'].encode('utf-8')
-        url = BABELFY_API_URL + '?' + urllib.urlencode(params)
+        url = BABELFY_API_URL + '?' + urlencode(params)
 
-        request = urllib2.Request(url)
+        request = Request(url)
         request.add_header('Accept-encoding', 'gzip')
-        response = urllib2.urlopen(request)
-        buf = StringIO(response.read())
+        response = urlopen(request)
+        if sys.version < '3':
+            buf = StringIO(response.read())
+        else:
+            buf = BytesIO(response.read())
         f = gzip.GzipFile(fileobj=buf)
-        self._data = json.loads(f.read())
+        reader = codecs.getreader('utf-8')
+        self._data = json.load(reader(f))
 
     def _parse_entities(self):
         """enrich the babelfied data with the text an the isEntity items
@@ -103,10 +116,12 @@ class BabelfyClient(object):
             char_fragment = result.get('charFragment')
             start = char_fragment.get('start')
             end = char_fragment.get('end')
-            entity[u'start'] = start
-            entity[u'end'] = end
-            entity[u'text'] = unicode(self._text[start: end+1])
-            entity[u'isEntity'] = True
+            entity['start'] = start
+            entity['end'] = end
+            entity['text'] = self._text[start: end+1]
+            if sys.version < '3' and isinstance(entity['text'], str):
+                entity['text'] = entity['test'].decode('utf-8')
+            entity['isEntity'] = True
             for key, value in result.items():
                 entity[key] = value
             entities.append(entity)
@@ -181,7 +196,7 @@ class BabelfyClient(object):
     def _parse_merged_entities(self):
         """set self._merged_entities to the longest possible(wrapping) tokens
         """
-        self._merged_entities = list(ifilterfalse(
+        self._merged_entities = list(filterfalse(
             lambda token: self._is_wrapped(token, self.entities),
             self.entities))
 
@@ -189,7 +204,7 @@ class BabelfyClient(object):
         """set self._all_merged_entities to the longest possible(wrapping)
         tokens including non-entity tokens
         """
-        self._all_merged_entities = list(ifilterfalse(
+        self._all_merged_entities = list(filterfalse(
             lambda token: self._is_wrapped(token, self.all_entities),
             self.all_entities))
 

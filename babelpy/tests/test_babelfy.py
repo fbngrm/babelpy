@@ -1,9 +1,12 @@
+from __future__ import print_function, unicode_literals, division, absolute_import
+
+import sys
 import unittest
 import json
-from babelfy import BabelfyClient
-from config.config import API_KEY, LANG
-from reader import read_txt_file
 import os
+from babelpy.babelfy import BabelfyClient
+from babelpy.config.config import API_KEY, LANG
+from babelpy.reader import read_txt_file
 
 params = dict()
 params['lang'] = LANG
@@ -211,9 +214,12 @@ class BabelfyTestCase(unittest.TestCase):
             start = char_fragment.get('start')
             end = char_fragment.get('end')
             token['isEntity'] = True
-            token[u'start'] = start
-            token[u'end'] = end
-            token[u'text'] = unicode(txt[start: end+1])
+            token['start'] = start
+            token['end'] = end
+            if sys.version < '3':
+                token['text'] = unicode(txt[start: end+1])
+            else:
+                token['text'] = txt[start: end+1]
 
         bc.babelfy(txt)
 
@@ -238,9 +244,12 @@ class BabelfyTestCase(unittest.TestCase):
             start = char_fragment.get('start')
             end = char_fragment.get('end')
             token['isEntity'] = True
-            token[u'start'] = start
-            token[u'end'] = end
-            token[u'text'] = unicode(txt[start: end+1])
+            token['start'] = start
+            token['end'] = end
+            if sys.version < '3':
+                token['text'] = unicode(txt[start: end+1])
+            else:
+                token['text'] = txt[start: end+1]
 
         bc.babelfy(txt)
         data = data + non_entities
@@ -252,10 +261,10 @@ class BabelfyTestCase(unittest.TestCase):
 
         for i, token in enumerate(bc.all_entities):
             response_token = data[i]
-            self.assertTrue(str(token['isEntity']) == str(response_token['isEntity']))
-            self.assertTrue(str(token['start']) == str(response_token['start']))
-            self.assertTrue(str(token['end']) == str(response_token['end']))
-            self.assertTrue(str(token['text']) == str(response_token['text']))
+            self.assertEqual(str(token['isEntity']), str(response_token['isEntity']))
+            self.assertEqual(str(token['start']), str(response_token['start']))
+            self.assertEqual(str(token['end']), str(response_token['end']))
+            self.assertEqual(str(token['text']), str(response_token['text']))
 
 
     def test_merged_entites(self):
@@ -267,9 +276,12 @@ class BabelfyTestCase(unittest.TestCase):
             start = char_fragment.get('start')
             end = char_fragment.get('end')
             token['isEntity'] = True
-            token[u'start'] = start
-            token[u'end'] = end
-            token[u'text'] = unicode(txt[start: end+1])
+            token['start'] = start
+            token['end'] = end
+            if sys.version < '3':
+                token['text'] = unicode(txt[start: end+1])
+            else:
+                token['text'] = txt[start: end+1]
 
         bc.babelfy(txt)
 
@@ -280,10 +292,10 @@ class BabelfyTestCase(unittest.TestCase):
 
         for i, token in enumerate(bc.merged_entities):
             response_token = data[i]
-            self.assertTrue(token['isEntity'] == response_token['isEntity'])
-            self.assertTrue(token['start'] == response_token['start'])
-            self.assertTrue(token['end'] == response_token['end'])
-            self.assertTrue(token['text'] == response_token['text'])
+            self.assertEqual(token['isEntity'], response_token['isEntity'])
+            self.assertEqual(token['start'], response_token['start'])
+            self.assertEqual(token['end'], response_token['end'])
+            self.assertEqual(token['text'], response_token['text'])
 
     def test_all_merged_entites(self):
         """test entities
@@ -294,9 +306,12 @@ class BabelfyTestCase(unittest.TestCase):
             start = char_fragment.get('start')
             end = char_fragment.get('end')
             token['isEntity'] = True
-            token[u'start'] = start
-            token[u'end'] = end
-            token[u'text'] = unicode(txt[start: end+1])
+            token['start'] = start
+            token['end'] = end
+            if sys.version < '3':
+                token['text'] = unicode(txt[start: end+1])
+            else:
+                token['text'] = txt[start: end+1]
 
         bc.babelfy(txt)
         data = data + non_entities
@@ -307,7 +322,7 @@ class BabelfyTestCase(unittest.TestCase):
 
         for i, token in enumerate(bc.all_merged_entities):
             response_token = data[i]
-            self.assertTrue(token['isEntity'] == response_token['isEntity'])
-            self.assertTrue(token['start'] == response_token['start'])
-            self.assertTrue(token['end'] == response_token['end'])
-            self.assertTrue(token['text'] == response_token['text'])
+            self.assertEqual(token['isEntity'], response_token['isEntity'])
+            self.assertEqual(token['start'], response_token['start'])
+            self.assertEqual(token['end'], response_token['end'])
+            self.assertEqual(token['text'], response_token['text'])
